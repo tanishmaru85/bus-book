@@ -1,0 +1,24 @@
+[
+  
+    {
+        "userName": "tanish",
+        "email": "tanish@gmail.com",
+        "password": "tttttttttt"
+    },
+
+    
+
+    {
+        "busName": "Milan Travels",
+        "form": "Bikaner",
+        "to": "jaipur",
+        "runningDay": ["Monday","Wednesday","Friday"], 
+        "runningTime": "11:20PM",
+        "price": 500,
+        "seatNo": 12,
+        "bookingDate":[]
+
+    }
+  
+
+]
