@@ -35,7 +35,7 @@ const register_user = async (req, res) => {
 
         const user = new userModel({
             userName: req.body.userName,
-            email: req.body.email,
+            email: req.body.email, 
             password: sPassword
         });
 
@@ -48,7 +48,7 @@ const register_user = async (req, res) => {
         }
 
     } catch (error) {
-        res.status(400).send(error.message);
+        res.status(400).json(error.message);
 
     }
 };

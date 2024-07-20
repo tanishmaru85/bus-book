@@ -1,10 +1,11 @@
 const mongoose = require('mongoose');
 
 const busSchema = new mongoose.Schema({
-                                 
-    busName: {
+
+    bus_name: {
         type: String,
         require: true,
+        unique: true,
     },
 
     form: {
@@ -16,7 +17,14 @@ const busSchema = new mongoose.Schema({
         type: String,
         reaquire: true,
     },
-
+    total_seats: {
+        type: Number,
+        require: true,
+    },
+    booked_seats: [{
+        type: Number,
+        require: true,
+    }],
 
     runningDays: [{
         type: String,
@@ -33,16 +41,17 @@ const busSchema = new mongoose.Schema({
         require: true,
     },
 
-    seatNo: [{
-        type: String,
-        require: true,
-    }],
+    seatNumber: {
+        type: Number,
+        require: true
+    },
 
-    bookingDate: { 
-        type: Date, 
-        default: Date.now 
-    }
+    bookingDate : {
+        type: Date,
+        default: Date.now,
+    },
+
 });
 
-const busModel = mongoose.model('booking', busSchema);
-module.exports = busModel;
+const Bus = mongoose.model('buses', busSchema);
+module.exports = Bus;

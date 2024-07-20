@@ -47,7 +47,7 @@ const update_password = async (req, res) => {
            return res.status(200).json({ sucess: false, msg: "User id not found" });
         }
     } catch (error) {
-       return res.status(400).json(error.message);
+        res.status(400).json(error.message);
     }
 
 };

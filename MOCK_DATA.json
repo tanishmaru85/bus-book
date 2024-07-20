@@ -6,19 +6,20 @@
         "password": "tttttttttt"
     },
 
-    
 
     {
-        "busName": "Milan Travels",
+        "bus_name": "bus 2",
         "form": "Bikaner",
         "to": "jaipur",
+        "total_seats": 20,
+        "booked_seats":[],
         "runningDay": ["Monday","Wednesday","Friday"], 
         "runningTime": "11:20PM",
-        "price": 500,
-        "seatNo": 12,
-        "bookingDate":[]
+        "price": 500
 
     }
+
+   
   
 
 ]

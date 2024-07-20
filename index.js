@@ -20,10 +20,15 @@ app.use('/api', user_router);
 app.use('/api', user_router);
 app.use('/api', user_router);
 
-// for bus booking 
+// for bus-booking system
 
 app.use('/api', bus_router);
 app.use('/api', bus_router);
+app.use('/api', bus_router);
+app.use('/api', bus_router);
+app.use('/api', bus_router);
+app.use('/api', bus_router);
+
 
 
 
